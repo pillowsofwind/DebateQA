@@ -1,6 +1,6 @@
 # DebateQA: Evaluating Question Answering on Debatable Knowledge
 
-This repo consists of the dataset and evaluation scripts f0r the paper **"DebateQA: Evaluating Question Answering on Debatable Knowledge"**.
+This repo consists of the dataset and evaluation scripts for the paper **"DebateQA: Evaluating Question Answering on Debatable Knowledge"**.
 
 [[Abstract]]() [[Paper]]()
 
@@ -57,7 +57,7 @@ Our experiments with 12 popular LLMs demonstrate varying levels of proficiency i
     Ranks of tested LLMs on P.D. and D.A. metrics.
 </p>
 
-For detailed results, analysis, and case studies, refer to our [Paper](https://arxiv.org/pdf/2407.16637).
+For detailed results, analysis, and case studies, refer to our [Paper]().
 
 ## Quick Start
 
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 >
 > `dataset` Folder - Contain our whole dataset.
 
-## Evaluating
+## Run Evaluation
 
 **Befor evaluation, the model answers to questions in DebateQA should be ready**
 You should provide a `.jsonl` file with each line being the following format:
