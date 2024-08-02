@@ -6,7 +6,7 @@ This repo consists of the dataset and evaluation scripts f0r the paper **"Debate
 
 ## Contributors
 
-Rongwu Xu, Xuan Qi
+Rongwu Xu and Xuan Qi
 
 Tsinghua University
 
@@ -14,20 +14,20 @@ If you have any questions or issues with the code, please send us an issue direc
 
 ## Introduction
 
-In our work, we present the DebateQA dataset tailored for evaluating debatable questions, which includes a collection of debatable questions and their plausible partial answers. Each partial answer respond the original question in one unique perspective. Additionally, we introduce two metrics for evaluating these answers: Perspective Diversity (P.D.) and Dispute Awareness (D.A.).
+In our work, we present **the DebateQA dataset** tailored for evaluating debatable questions, which includes a collection of debatable questions and their plausible partial answers. Each partial answer respond the original question in one unique perspective. Additionally, we introduce **two metrics** for evaluating these answers: Perspective Diversity (P.D.) and Dispute Awareness (D.A.).
 
-- Perspective Diversity (P.D.) is a PPL based generation evaluation to quantifying the comprehensiveness w.r.t. the legimate perspectives.
-- Dispute Awareness (D.A.) is a simple prompt-based binary metric on detecting the acknowledgement of debate.
+- **Perspective Diversity (P.D.)** is a PPL based generation evaluation to quantifying the comprehensiveness w.r.t. the legimate perspectives.
+- **Dispute Awareness (D.A.)** is a simple prompt-based binary metric on detecting the acknowledgement of debate.
 
 ## The Dataset
 
-Our dataset, DebateQA, comprises 2,941 debatable questions, each paired with multiple partial answers annotated by humans. These partial answers capture a variety of perspectives, ensuring a comprehensive representation of the debate surrounding each question. The dataset is fully annotated by human.
+Our dataset, DebateQA, comprises 2,941 debatable questions, each paired with multiple partial answers annotated by humans. These partial answers capture a variety of perspectives, ensuring a comprehensive representation of the debate surrounding each question. The dataset is **fully annotated by human**.
 
 - Test set: 1,000 Questions
 - Dev set: 1,941 Questions
 
 <p align="center">
-    <img src="./figs/dataset_pipline.png" alt="teaser" width="650" /> <br>
+    <img src="./figs/dataset_pipeline.png" alt="pipeline" width="650" /> <br>
     Pipeline for curating DebateQA. The three main components of the pipeline are highlighted in different colors: sourcing debatable questions, collecting partial answers, and human annotation.
 </p>
 
@@ -38,9 +38,11 @@ Our dataset, DebateQA, comprises 2,941 debatable questions, each paired with mul
 
 The P.D. metric evaluates the comprehensiveness of the perspectives provided in the answers. This metric measures how well the answers encompass multiple viewpoints, reflecting the complexity and diversity of opinions on debatable issues.
 
-$$P.D. := \sum^n_i PPL(\text{PA}^i \mid chatTemplate(Concat(A, \, "Please restate."))),$$
+$$P.D. := \sum^n_i PPL(\text{PA}^i \mid \texttt{chatTemplate}(\texttt{Concat}(A, \, "Please restate."))),$$
+
 where
-$$PPL(Y|X) = \exp\left(\frac{1}{N} \sum_{i=1}^{N} \log P(y_i|X, y_{<i})\right)$$
+
+$$ PPL(Y \mid X) = \exp \left(\frac{1}{N} \sum_{i=1}^{N} \log P(y_i \mid X, y_{< i})\right) $$
 
 ### Dispute Awareness (D.A.)
 
@@ -51,7 +53,7 @@ The D.A. metric assesses whether the model acknowledges the debatable nature of 
 Our experiments with 12 popular LLMs demonstrate varying levels of proficiency in recognizing and addressing debatable issues. While most models excel at identifying debatable questions, their ability to provide comprehensive answers encompassing diverse perspectives varies significantly.
 
 <p align="center">
-    <img src="./figs/ranks_of_models.png" alt="teaser" width="400" /> <br>
+    <img src="./figs/ranks_of_models.png" alt="ranks" width="400" /> <br>
     Ranks of tested LLMs on P.D. and D.A. metrics.
 </p>
 
@@ -78,10 +80,10 @@ pip install -r requirements.txt
 ## Evaluating
 
 **Befor evaluation, the model answers to questions in DebateQA should be ready**
-You should provide a `.jsonl` file with each line being:
+You should provide a `.jsonl` file with each line being the following format:
 
 ```
-{"generation":{your model's answer to question id};"id":{the original question id}}
+{"generation": {your model's answer to question id}; "id": {the original question id}}
 ```
 
 
