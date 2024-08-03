@@ -2,7 +2,12 @@
 
 This repo consists of the dataset and evaluation scripts for the paper **"DebateQA: Evaluating Question Answering on Debatable Knowledge"**.
 
-[[Abstract]]() [[Paper]]()
+<p align="center">
+    <img src="./figs/logo.png" alt="logo" width="80" /> <br>
+    [[Abstract]]() [[Paper]]()
+</p>
+
+
 
 ## Contributors
 
