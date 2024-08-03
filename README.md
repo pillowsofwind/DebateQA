@@ -3,15 +3,15 @@
 This repo consists of the dataset and evaluation scripts for the paper **"DebateQA: Evaluating Question Answering on Debatable Knowledge"**.
 
 <p align="center">
-    <img src="./figs/logo.png" alt="logo" width="80" /> <br>
-    [[Abstract]]() [[Paper]]()
+    <img src="./figs/logo.png" alt="logo" width="280" /> <br>
+    <a href="">[[Abstract]]</a> <a href="">[[Paper]]</a>
 </p>
 
 
 
 ## Contributors
 
-Rongwu Xu and Xuan Qi
+**Rongwu Xu** and **Xuan Qi**
 
 Tsinghua University
 
