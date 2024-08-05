@@ -4,7 +4,7 @@ This repo consists of the dataset and evaluation scripts for the paper **"Debate
 
 <p align="center">
     <img src="./figs/logo.png" alt="logo" width="280" /> <br>
-    <a href="">[[Abstract]]</a> <a href="">[[Paper]]</a>
+    <a href="http://arxiv.org/abs/2408.01419">[Abstract]</a> <a href="http://arxiv.org/pdf/2408.01419">[Paper]</a>
 </p>
 
 
@@ -62,7 +62,7 @@ Our experiments with 12 popular LLMs demonstrate varying levels of proficiency i
     Ranks of tested LLMs on P.D. and D.A. metrics.
 </p>
 
-For detailed results, analysis, and case studies, refer to our [Paper]().
+For detailed results, analysis, and case studies, refer to our [Paper](http://arxiv.org/pdf/2408.01419).
 
 ## Quick Start
 
