@@ -81,6 +81,8 @@ pip install -r requirements.txt
 > `scripts` Folder - Contain bash scripts for testing P.D. and D.A. discribed in our paper.
 >
 > `dataset` Folder - Contain our whole dataset.
+> 
+> `raw_data` Folder - Contain the original articles used to generate the POVs as well as the index corresponding to each POV in the documents. The `ranked_retrieve_docs` is used to fetch the original documents and web links for the POVs, while the `partial_answers` contains the source index corresponding to the document passage extracted for each POV.
 
 ## Run Evaluation
 
@@ -133,3 +135,4 @@ Then run
 ```
 
 Your can get the D.A. score of the input file on corresponding dataset.
+
