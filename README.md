@@ -1,6 +1,6 @@
 # DebateQA: Evaluating Question Answering on Debatable Knowledge
 
-This repo consists of the dataset and evaluation scripts for the paper **"DebateQA: Evaluating Question Answering on Debatable Knowledge"**.
+This repo consists of the dataset and evaluation scripts for the <a href="https://2026.eacl.org">EACL 2026</a> paper **"DebateQA: Evaluating Question Answering on Debatable Knowledge"**.
 
 <p align="center">
     <img src="./figs/logo.png" alt="logo" width="280" /> <br>
@@ -11,9 +11,9 @@ This repo consists of the dataset and evaluation scripts for the paper **"Debate
 
 ## Contributors
 
-**Rongwu Xu** and **Xuan Qi**
+**Rongwu Xu**, **Xuan Qi**, Zehan Qi, Wei Xu and Zhijiang Guo
 
-Tsinghua University
+Tsinghua Universty, University of Cambridge and Fangcun AI
 
 If you have any questions or issues with the code, please send us an issue directly.
 
@@ -135,4 +135,17 @@ Then run
 ```
 
 Your can get the D.A. score of the input file on corresponding dataset.
+
+### Citation
+
+If you find our evaluation useful, please consider citing:
+
+```
+@article{xu2024debateqa,
+  title={Debateqa: Evaluating question answering on debatable knowledge},
+  author={Xu, Rongwu and Qi, Xuan and Qi, Zehan and Xu, Wei and Guo, Zhijiang},
+  journal={arXiv preprint arXiv:2408.01419},
+  year={2024}
+}
+```
 
